@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    background-color: #000;
+    /* This creates a 2px dot every 30px */
+    background-image: radial-gradient(rgba(255, 255, 255, 0.041) 1px, transparent 1px);
+    background-size: 30px 30px;
+    
+    
+    color: white;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 20px;
+}
+
+
+/* CENTER */
+.center {
+    text-align: center;
+    font-size: 3.5rem; /* Slightly larger for presence */
+    opacity: 1;        /* Full opacity makes the glow pop */
+    
+    /* Subtle layered glow */
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.8), 
+        0 0 10px rgba(255, 255, 255, 0.5), 
+        0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Glow effect (mirror feel) */
+#time, #weather, #news, #date {
+    text-shadow: 0 0 10px white;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 2rem;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 1.2rem;
+}
+#time {
+    font-size: 2.5rem;
+}
+
+#weather {
+    text-align: right;
+}
+
+#date {
+    text-align: right;
+}
+
+#news {
+    font-size: 1rem;
+    line-height: 1.5;
+}
